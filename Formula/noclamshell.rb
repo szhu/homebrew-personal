@@ -1,12 +1,11 @@
 class Noclamshell < Formula
   desc "Sleep despite annoying clamshell mode"
   homepage "https://github.com/pirj/noclamshell"
-  url "https://github.com/pirj/noclamshell/archive/3c540e8.tar.gz"
-  version "1.1pre1"
-  sha256 "a8fedf309890fb7c51b5f8f4cb44a0ee362712316342bb55dfa4b39522caeb92"
+  url "https://github.com/pirj/noclamshell/archive/1.1.tar.gz"
+  sha256 "afd4cc876646a8ec83fb0fa06f1653e5d8877d02e569525370795def7b9d842a"
 
   def install
-    mkdir bin
+    bin.mkpath
     copy_file "noclamshell", "#{bin}/noclamshell"
   end
 
@@ -15,15 +14,18 @@ class Noclamshell < Formula
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
       <dict>
-        <key>Label</key><string>noclamshell</string>
-        <key>ThrottleInterval</key> <integer>2</integer>
-        <key>KeepAlive</key> <true/>
+        <key>KeepAlive</key>
+        <true/>
+        <key>Label</key>
+        <string>#{plist_name}</string>
         <key>ProgramArguments</key>
-          <array>
-            <string>bash</string>
-            <string>-c</string>
-            <string>#{opt_bin}/noclamshell</string>
-          </array>
+        <array>
+          <string>bash</string>
+          <string>-c</string>
+          <string>#{bin}/noclamshell</string>
+        </array>
+        <key>ThrottleInterval</key>
+        <integer>2</integer>
       </dict>
     </plist>
     EOS
