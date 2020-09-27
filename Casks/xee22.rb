@@ -5,7 +5,6 @@ cask 'xee22' do
   url "http://wakaba.c3.cx/releases/Xee/Xee#{version}.zip"
   name 'Harmony'
   homepage 'https://xee.c3.cx/old'
-  license :gratis
 
   app 'Xee.app'
 end

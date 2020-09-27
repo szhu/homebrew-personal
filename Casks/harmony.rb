@@ -5,7 +5,6 @@ cask 'harmony' do
   url "https://github.com/vincelwt/harmony/releases/download/#{version}/Harmony.app.zip"
   name 'Harmony'
   homepage 'http://getharmony.xyz/'
-  license :oss
 
   app 'Harmony.app'
 end

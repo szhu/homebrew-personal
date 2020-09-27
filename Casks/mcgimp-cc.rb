@@ -5,7 +5,6 @@ cask 'mcgimp-cc' do
   url 'http://www.partha.com/downloads/McGimp-2.9-cc.app.zip'
   name 'McGimp Color Patched'
   homepage 'http://www.partha.com/'
-  license :gratis
 
   app 'McGimp-2.9-cc.app'
 end

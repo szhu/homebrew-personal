@@ -5,7 +5,6 @@ cask 'mcgimp' do
   url 'http://www.partha.com/downloads/McGimp-2.9.app.zip'
   name 'McGimp'
   homepage 'http://www.partha.com/'
-  license :gratis
 
   app 'McGimp-2.9.app'
 end

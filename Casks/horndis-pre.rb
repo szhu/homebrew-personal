@@ -5,9 +5,6 @@ cask 'horndis-pre' do
   url "http://nyus.joshuawise.com/HoRNDIS-rel#{version}.pkg"
   name 'HoRNDIS'
   homepage 'https://github.com/jwise/HoRNDIS/issues/42'
-  license :gpl
-  gpg "#{url}.sig",
-      key_id: '3e7f6d58ea80e0b3'
 
   pkg "HoRNDIS-rel#{version}.pkg"
 

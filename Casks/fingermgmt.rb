@@ -5,7 +5,6 @@ cask 'fingermgmt' do
   url 'http://www.makeitgo.ws/articles/fingermgmt/FingerMgmt.zip'
   name 'FingerMgmt'
   homepage 'http://www.makeitgo.ws/articles/fingermgmt/'
-  license :oss
 
   app 'FingerMgmt.app'
 end

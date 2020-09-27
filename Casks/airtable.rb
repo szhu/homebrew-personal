@@ -5,7 +5,6 @@ cask 'airtable' do
   url "https://static.airtable.com/download/AirtableInstaller.dmg?v=#{version}"
   name 'Airtable'
   homepage 'http://airtable.com/'
-  license :gratis
 
   app 'Airtable.app'
 end

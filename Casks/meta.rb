@@ -5,7 +5,6 @@ cask 'meta' do
   url "https://storage.googleapis.com/meta-release-prod/mac/Meta_#{version}.zip"
   name 'Meta'
   homepage 'https://www.meta.sc/'
-  license :gratis
 
   app 'Meta.app'
 end
