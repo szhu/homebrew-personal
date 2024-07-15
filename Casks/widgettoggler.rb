@@ -7,5 +7,7 @@ cask "widgettoggler" do
   desc "macOS Sonoma Widget Toggler for the Tray Bar - Easily Show and Hide Widgets"
   homepage "https://github.com/sieren/WidgetToggler"
 
+  depends_on macos: ">= :sonoma"
+
   app "WidgetToggler.app"
 end
